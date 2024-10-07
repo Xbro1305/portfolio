@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img class="element-animation el" src="./images/Union.svg" alt="" />
+        <section>
+          <a href="#home" class="element-animation header_link">Главная</a>
+          <a href="#projects" class="element-animation header_link">Проекты</a>
+          <a href="#about" class="element-animation header_link">Обо мне</a>
+          <a href="#contact" class="element-animation header_link">Связаться</a>
+        </section>
+      </header>
+
+      <div class="menubutton" onclick="menu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="menubar">
+        <div>
+          <img class="element-animation el" src="./images/Union.svg" alt="" />
+          <span onclick="menu()">&times;</span>
+        </div>
+        <section>
+          <a
+            href="#home"
+            onclick="menu()"
+            class="element-animation er header_link"
+            >Главная</a
+          >
+          <a
+            href="#projects"
+            onclick="menu()"
+            class="element-animation er header_link"
+            >Проекты</a
+          >
+          <a
+            href="#about"
+            onclick="menu()"
+            class="element-animation er header_link"
+            >Обо мне</a
+          >
+          <a
+            href="#contact"
+            onclick="menu()"
+            class="element-animation er header_link"
+            >Связаться</a
+          >
+        </section>
+      </div>
+
+      <div id="home" class="home section">
+        <img src="./images/sticker 1.png" class="element-animation el" alt="" />
+        <div class="home_right">
+          <h1 class="element-animation">Привет 👋</h1>
+          <p class="element-animation">
+            <b> Я фронтенд-разработчик и веб-дизайнер <br /> </b>
+            Меня зовут Ахмаджон Шарифов и я делаю сайты для людей и компаний
+          </p>
+          <div class="links">
+            <section>
+              <a
+                href="https://github.com/Xbro1305/"
+                class="element-animation eb"
+              >
+                <img src="./images/github.svg" alt="" />
+              </a>
+              <a href="http://t.me/Sh4rifoff" class="element-animation eb">
+                <img src="./images/ic_telegram.svg" alt="" />
+              </a>
+              <a
+                class="element-animation eb"
+                href="https://api.whatsapp.com/send/?phone=998907972010&text&type=phone_number&app_absent=0"
+              >
+                <img src="./images/ic_whatsapp-outline.svg" alt="" />
+              </a>
+            </section>
+            <a href="/resume.docx" class="element-animation er">
+              <img src="./images/Vector.svg" alt="" />
+              Скачать резюме
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects" id="projects">
+        <h1 class="element-animation">Последние проекты</h1>
+        <div class="projects_list"></div>
+      </div>
+
+      <div class="about" id="about">
+        <div class="about_top">
+          <img class="element-animation el" src="./images/react-1.svg" alt="" />
+
+          <div class="about_right">
+            <h2 class="element-animation">Рад вас видеть</h2>
+            <h1 class="element-animation">Я Ахмаджон Шарифов</h1>
+            <p class="element-animation">
+              Я разрабатываю сайты для людей и компаний, пишу код.
+            </p>
+            <h3 class="element-animation eb">Код, Дизайн, Обучение</h3>
+            <p class="element-animation eb">
+              Могу собрать страницу для вашей компании, даже если запускать её
+              нужно уже завтра. Из инструментов есть: Figma, HTML, CSS,
+              JavaScript, ReactJS, ExpressJS
+            </p>
+          </div>
+        </div>
+
+        <div class="about_bottom">
+          <h4 class="element-animation">
+            Работаю с разными языками и инструментами
+          </h4>
+          <div class="project_stack element-animation eb">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>ReactJS</p>
+            <p>npm</p>
+            <p>SASS</p>
+            <p>ExpressJS</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <div>
+          <h1 class="element-animation">Готов обсудить проект...</h1>
+          <form>
+            <label class="element-animation">
+              <p>Имя</p>
+              <input
+                onfocus="goto(1)"
+                onclick="goto(1)"
+                type="text"
+                name="name"
+              />
+            </label>
+            <label class="element-animation">
+              <p>Email</p>
+              <input
+                onfocus="goto(2)"
+                onclick="goto(2)"
+                type="email"
+                name="email"
+              />
+            </label>
+            <label class="element-animation eb">
+              <p>Сообщение</p>
+              <textarea
+                onfocus="goto(3)"
+                onclick="goto(3)"
+                name="text"
+                id=""
+              ></textarea>
+            </label>
+            <button class="element-animation eb" type="button" onclick="send()">
+              <img src="./images/Vector (3).svg" alt="" />
+              Отправить
+            </button>
+            <img
+              class="formImg"
+              src="./images/Light-brown-in-Basic5 1.png"
+              alt=""
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
