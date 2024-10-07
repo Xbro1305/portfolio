@@ -75,11 +75,11 @@ document.querySelector(".projects_list").innerHTML = projects
               </p>
               <div class="project_links">
                 <a href="${i.code}">
-                  <img src="./images/Vector (2).svg" alt="" />
+                  <img src="./images/Vector (1).svg" alt="" />
                   Код
                 </a>
                 <a href="${i.url}">
-                  <img src="./images/Vector (1).svg" alt="" />
+                  <img src="./images/Vector (2).svg" alt="" />
                   Демо
                 </a>
               </div>
