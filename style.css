@@ -422,7 +422,7 @@ header a.element-animation {
     top: 10px;
     left: 100%;
     transform: translateX(calc(-100% - 10px));
-    z-index: 9999;
+    z-index: 999999 !important;
   }
 
   .menubutton span {
