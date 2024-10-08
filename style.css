@@ -40,7 +40,6 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
 }
 
 main {
@@ -420,7 +419,8 @@ header a.element-animation {
     background: #00000010;
     position: fixed !important;
     top: 10px;
-    right: 10px;
+    left: 100%;
+    transform: translateX(calc(-100% - 10px));
     z-index: 9999;
   }
 
@@ -444,6 +444,7 @@ header a.element-animation {
     padding: 48px;
     max-width: calc(100% - 96px);
     width: 100%;
+    opacity: 0;
     gap: 30px;
   }
 
@@ -466,6 +467,7 @@ header a.element-animation {
 
   .menubar.active {
     right: 0;
+    opacity: 1;
   }
 
   .menubar div span {
