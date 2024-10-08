@@ -148,7 +148,7 @@ header a.element-animation {
   color: #bf7506;
   text-decoration: none;
   border-bottom: 2px solid #bf7506;
-  padding-bottom: 7px;
+  bottom: 5px;
 }
 
 .projects {
@@ -421,8 +421,9 @@ header a.element-animation {
 
   .menubuttonwrapper {
     position: sticky !important;
-    top: 10px !important;
-    left: 10px;
+    top: 0px !important;
+    left: 0;
+    padding: 10px 0;
     z-index: 999999 !important;
     width: 100%;
     display: flex;
