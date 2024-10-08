@@ -13,7 +13,7 @@ const projects = [
     desc: "Лендинг для компании чистки ковров. ",
     img: "./images/projects/2.png",
     code: "https://github.com/Xbro1305/kovrochistka",
-    url: "kanio.by",
+    url: "https://kanio.by",
   },
   {
     name: "Кликер",
