@@ -12,7 +12,6 @@ const projects = [
     stak: ["HTML", "CSS", "JS"],
     desc: "Лендинг для компании чистки ковров. ",
     img: "./images/projects/2.png",
-    code: "https://github.com/Xbro1305/kovrochistka",
     url: "https://kanio.by",
   },
   {
@@ -32,16 +31,13 @@ const projects = [
     img: "./images/projects/4.png",
   },
   {
-    code: "https://github.com/Xbro1305/fitokrama",
     url: "fitokrama.by",
     img: "./images/projects/5.png",
     stak: ["HTML", "CSS", "JS"],
-    code: "https://github.com/Xbro1305/fitokrama",
     desc: "Сайт онлайн аптеки в Беларуси",
     name: "Fitokrama",
   },
   {
-    code: "https://github.com/Xbro1305/everminer/",
     url: "everminer.vercel.app",
     img: "./images/projects/6.png",
     name: "Everminer",
@@ -74,9 +70,9 @@ document.querySelector(".projects_list").innerHTML = projects
                 ${i.desc}
               </p>
               <div class="project_links">
-                <a href="${i.code}">
+                <a href="${i.code ? i.code : ""}">
                   <img src="./images/Vector (1).svg" alt="" />
-                  Код
+                  Код ${i.code ? "" : "Скрыт"}
                 </a>
                 <a href="${i.url}">
                   <img src="./images/Vector (2).svg" alt="" />

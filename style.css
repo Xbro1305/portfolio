@@ -483,9 +483,11 @@ header a.element-animation {
   main {
     padding: 0;
   }
+  
   header {
     display: none;
   }
+
   .home > img {
     display: none;
   }
