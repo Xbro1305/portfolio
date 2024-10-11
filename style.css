@@ -36,6 +36,11 @@
   transform: translateY(0) scale(1);
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   width: 100%;
   display: flex;
@@ -50,6 +55,7 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow-x: hidden;
 }
 
 header {
@@ -483,7 +489,7 @@ header a.element-animation {
   main {
     padding: 0;
   }
-  
+
   header {
     display: none;
   }
