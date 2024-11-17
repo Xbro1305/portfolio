@@ -59,6 +59,10 @@ main {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 header {
   width: calc(100%);
   display: flex;
