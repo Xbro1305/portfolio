@@ -50,8 +50,7 @@ body {
 }
 
 main {
-  max-width: 1024px;
-  width: calc(100% - 45px);
+  width: calc(100%);
   padding: 0 20px;
   display: flex;
   flex-direction: column;
@@ -60,12 +59,12 @@ main {
 }
 
 header {
-  width: 100%;
+  width: calc(100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px ;
-  position: fixed;
+  padding: 20px;
+  position: sticky;
   top: 0;
   background: #ffffff80;
   z-index: 9;
