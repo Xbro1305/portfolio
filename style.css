@@ -436,7 +436,19 @@ header a.element-animation {
 .feedbacks {
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 20px;
+  padding: 40px 0 !important;
+  padding-top: 70px !important;
+
+  &::before {
+    content: "Отзывы обо мне";
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    top: 0;
+  }
 }
 
 .feedback {

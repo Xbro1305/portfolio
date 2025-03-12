@@ -181,7 +181,7 @@ const completedTasks = [
   },
 ];
 
-document.querySelector("#feedbacks").innerHTML = completedTasks
+document.querySelector("#reviews").innerHTML = completedTasks
   .map(
     (i) =>
       `<div class="feedback">

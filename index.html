@@ -13,6 +13,7 @@
         <section>
           <a href="#home" class="element-animation header_link">Главная</a>
           <a href="#projects" class="element-animation header_link">Проекты</a>
+          <a href="#reviews" class="element-animation header_link">Отзывы</a>
           <a href="#about" class="element-animation header_link">Обо мне</a>
           <a href="#contact" class="element-animation header_link">Связаться</a>
         </section>
@@ -30,7 +31,7 @@
       <div class="menubar">
         <div>
           <img class="element-animation el" src="./images/Union.svg" alt="" />
-          <span onclick="menu()">&times;</span>
+          <span onclick="menu()" style="cursor: pointer">&times;</span>
         </div>
         <section>
           <a
@@ -43,21 +44,28 @@
           <a
             href="#projects"
             onclick="menu()"
-            style="transition-delay: 0.2s"
+            style="transition-delay: 0.1s"
             class="element-animation er header_link"
             >Проекты</a
           >
           <a
+            href="#reviews"
+            onclick="menu()"
+            style="transition-delay: 0.2s"
+            class="element-animation er header_link"
+            >Отзывы</a
+          >
+          <a
             href="#about"
             onclick="menu()"
-            style="transition-delay: 0.4s"
+            style="transition-delay: 0.3s"
             class="element-animation er header_link"
             >Обо мне</a
           >
           <a
             href="#contact"
             onclick="menu()"
-            style="transition-delay: 0.6s"
+            style="transition-delay: 0.4s"
             class="element-animation er header_link"
             >Связаться</a
           >
@@ -103,7 +111,7 @@
         <div class="projects_list"></div>
       </div>
 
-      <div class="feedbacks" id="feedbacks"></div>
+      <div class="feedbacks" id="reviews"></div>
 
       <div class="about" id="about">
         <div class="about_top">
