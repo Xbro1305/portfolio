@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <header>
+    <header>
+      <div class="header-content">
         <img class="element-animation el" src="./images/Union.svg" alt="" />
         <section>
           <a href="#home" class="element-animation header_link">Главная</a>
@@ -16,8 +16,9 @@
           <a href="#about" class="element-animation header_link">Обо мне</a>
           <a href="#contact" class="element-animation header_link">Связаться</a>
         </section>
-      </header>
-
+      </div>
+    </header>
+    <main>
       <div class="menubuttonwrapper">
         <div class="menubutton" onclick="menu()">
           <span></span>
@@ -64,11 +65,11 @@
       </div>
 
       <div id="home" class="home section">
-        <img src="./images/sticker 1.png" class="element-animation el" alt="" />
+        <img src="./images/hi.png" class="element-animation el" alt="" />
         <div class="home_right">
           <h1 class="element-animation">Привет 👋</h1>
           <p class="element-animation">
-            <b> Я фронтенд-разработчик и веб-дизайнер <br /> </b>
+            <b>Я Full-stack веб-разработчик<br /> </b>
             Меня зовут Ахмаджон Шарифов и я делаю сайты для людей и компаний
           </p>
           <div class="links">
@@ -102,6 +103,14 @@
         <div class="projects_list"></div>
       </div>
 
+      <div class="feedbacks" id="feedbacks">
+        <div>
+          <h1>Переверстать страничку из Тильды</h1>
+          <span>5.0</span>
+          <p>Хорошо сделал свою работу. Достаточно быстро...</p>
+        </div>
+      </div>
+
       <div class="about" id="about">
         <div class="about_top">
           <img class="element-animation el" src="./images/react-1.svg" alt="" />
@@ -131,7 +140,7 @@
             <p>JavaScript</p>
             <p>ReactJS</p>
             <p>npm</p>
-            <p>SASS</p>
+            <p>SCSS</p>
             <p>ExpressJS</p>
           </div>
         </div>
@@ -143,37 +152,23 @@
           <form>
             <label class="element-animation">
               <p>Имя</p>
-              <input
-                onfocus="goto(1)"
-                onclick="goto(1)"
-                type="text"
-                name="name"
-              />
+              <input onfocus="goto(1)" type="text" name="name" />
             </label>
             <label class="element-animation">
               <p>Email</p>
-              <input
-                onfocus="goto(2)"
-                onclick="goto(2)"
-                type="email"
-                name="email"
-              />
+              <input onfocus="goto(2)" type="email" name="email" />
             </label>
             <label class="element-animation eb">
               <p>Сообщение</p>
-              <textarea
-                onfocus="goto(3)"
-                onclick="goto(3)"
-                name="text"
-                id=""
-              ></textarea>
+              <textarea onfocus="goto(3)" name="text" id=""></textarea>
             </label>
             <button class="element-animation eb" type="button" onclick="send()">
               <img src="./images/Vector (3).svg" alt="" />
               Отправить
             </button>
             <img
-              class="formImg"
+              class="formImg element-animation eb"
+              style="transition-duration: 0.5s; transition-delay: 0s"
               src="./images/Light-brown-in-Basic5 1.png"
               alt=""
             />
