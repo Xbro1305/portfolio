@@ -184,7 +184,7 @@ const completedTasks = [
 document.querySelector("#reviews").innerHTML = completedTasks
   .map(
     (i) =>
-      `<div class="feedback">
+      `<div class="feedback element-animation eb">
     <img src="./images/profile.svg" alt="" />
     <section>
     <h1>${i.title}</h1>
