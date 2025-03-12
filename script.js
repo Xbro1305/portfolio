@@ -98,36 +98,6 @@ document.querySelector(".projects_list").innerHTML = projects
   })
   .join(" ");
 
-function onEntry(entry) {
-  entry.forEach((change) => {
-    if (change.isIntersecting) {
-      change.target.classList.add("element-show");
-      change.target.style.animationPlayState = "running";
-    } else {
-      change.target.classList.remove("element-show");
-    }
-  });
-}
-
-let options = {
-  threshold: [0.2],
-};
-
-let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll(".element-animation");
-
-for (let elm of elements) {
-  observer.observe(elm);
-}
-
-const goto = (num) => {
-  document.querySelector(".formImg").style.top = `${num * 75 - 75}px`;
-};
-
-const menu = () => {
-  document.querySelector(".menubar").classList.toggle("active");
-};
-
 const completedTasks = [
   {
     title: "Переверстать страничку из Тильды",
@@ -184,14 +154,46 @@ const completedTasks = [
 document.querySelector("#reviews").innerHTML = completedTasks
   .map(
     (i) =>
-      `<div class="feedback element-animation eb">
-    <img src="./images/profile.svg" alt="" />
-    <section>
-    <h1>${i.title}</h1>
-    <p>${i.comment}</p>
-    </section>
-    <span>${i.score}.0</span>
-    <img src="./images/star.svg" class="star" alt="" />
-  </div>`
+      `
+        <div class="feedback">
+          <img src="./images/profile.svg" class="element-animation el" alt="" />
+          <section class="element-animation eb">
+            <h1>${i.title}</h1>
+            <p>${i.comment}</p>
+          </section>
+          <span class="element-animation er">${i.score}.0</span>
+          <img class="element-animation er star" src="./images/star.svg" />
+        </div>
+        `
   )
   .join("");
+
+function onEntry(entry) {
+  entry.forEach((change) => {
+    if (change.isIntersecting) {
+      change.target.classList.add("element-show");
+      change.target.style.animationPlayState = "running";
+    } else {
+      change.target.classList.remove("element-show");
+    }
+  });
+}
+
+let options = {
+  threshold: [0.2],
+};
+
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll(".element-animation");
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
+
+const goto = (num) => {
+  document.querySelector(".formImg").style.top = `${num * 75 - 75}px`;
+};
+
+const menu = () => {
+  document.querySelector(".menubar").classList.toggle("active");
+};
