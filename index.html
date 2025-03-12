@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <header>
@@ -153,7 +157,7 @@
       <div class="contact" id="contact">
         <div>
           <h1 class="element-animation">Готов обсудить проект...</h1>
-          <form>
+          <form onsubmit="send(event)">
             <label class="element-animation">
               <p>Имя</p>
               <input onfocus="goto(1)" type="text" name="name" />
@@ -166,7 +170,7 @@
               <p>Сообщение</p>
               <textarea onfocus="goto(3)" name="text" id=""></textarea>
             </label>
-            <button class="element-animation eb" type="button" onclick="send()">
+            <button class="element-animation eb" type="submit">
               <img src="./images/Vector (3).svg" alt="" />
               Отправить
             </button>
@@ -182,4 +186,32 @@
     </main>
   </body>
   <script src="./script.js"></script>
+  <script>
+    const send = (event) => {
+      event.preventDefault();
+
+      const formdata = new FormData(event.target);
+      const value = Object.fromEntries(formdata);
+      console.log(value);
+
+      const name = formdata.get("name");
+      const email = formdata.get("email");
+      const text = formdata.get("text");
+
+      emailjs
+        .send("service_c3rh8z1", "template_mxhgnap", {
+          name,
+          email,
+          text,
+        })
+        .then((res) => {
+          alert("Сообщение отправлено");
+        })
+        .catch((err) => {
+          alert("Произошла ошибка");
+        });
+    };
+
+    emailjs.init("RZZxM8VbiJBQE2jC2");
+  </script>
 </html>

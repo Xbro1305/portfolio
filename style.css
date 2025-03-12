@@ -10,7 +10,7 @@
 .element-animation {
   opacity: 0;
   transform: translateY(-50px);
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
 }
 
 .element-animation.el {
@@ -31,8 +31,8 @@
 
 .element-animation.element-show {
   opacity: 1;
-  transition: all 0.5s;
-  transition-delay: 0.2s;
+  transition: all 0.8s;
+  transition-delay: 0.4s;
   transform: translateY(0) scale(1);
 }
 
