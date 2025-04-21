@@ -1,6 +1,6 @@
 const projects = [
   {
-    url: "fitokrama.by",
+    url: "https://fitokrama.by",
     img: "./images/projects/fitokrama.png",
     stak: ["HTML", "CSS", "JS"],
     desc: "Сайт онлайн аптеки в Беларуси",
