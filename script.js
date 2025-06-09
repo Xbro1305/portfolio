@@ -7,19 +7,18 @@ const projects = [
     name: "Fitokrama",
   },
   {
-    url: "everminer.vercel.app",
+    url: "https://everminer.vercel.app",
     img: "./images/projects/everminer.png",
     name: "Everminer",
     desc: "Сайт майнеров ",
     stak: ["HTML", "CSS", "JS"],
   },
   {
-    name: "Лазурь",
+    name: "OsiyoHomeTex",
     stak: ["HTML", "CSS", "JS"],
-    desc: "Лендинг для пляжа.",
-    code: "https://github.com/Xbro1305/lazur",
-    url: "https://candid-seahorse-bfd5a1.netlify.app/",
-    img: "./images/projects/lazur.png",
+    desc: "Full-stack проект для текстильной компании в Узбекистане.",
+    url: "https://osiyohometex.uz",
+    img: "./images/projects/osiyohome.png",
   },
   {
     name: "На червенском",
@@ -42,22 +41,6 @@ const projects = [
     img: "./images/projects/smartwear.png",
     url: "https://test.maxiscomfort.ru/",
   },
-  // {
-  //   name: "Кликер",
-  //   desc: "Простой игровой кликер для TG Web App",
-  //   stak: ["ReactJS"],
-  //   code: "https://github.com/Xbro1305/webapp",
-  //   img: "./images/projects/clicker.png",
-  //   url: "https://webapp-b2kc.vercel.app/frens",
-  // },
-  // {
-  //   name: "reManga",
-  //   url: "https://book-gilt-nu.vercel.app/",
-  //   code: "https://github.com/Xbro1305/boo",
-  //   stak: ["ReactJS", "Redux", "vite"],
-  //   desc: "Сайт для любителей манги",
-  //   img: "./images/projects/4.png",
-  // },
 ];
 
 document.querySelector(".projects_list").innerHTML = projects
