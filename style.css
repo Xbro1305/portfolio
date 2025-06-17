@@ -208,6 +208,9 @@ header a.element-animation {
 
 .project > img {
   width: 100%;
+  flex: 1;
+  object-fit: contain;
+  object-position: top;
 }
 
 .project_info {
