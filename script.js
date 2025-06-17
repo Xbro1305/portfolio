@@ -15,7 +15,7 @@ const projects = [
   },
   {
     name: "OsiyoHomeTex",
-    stak: ["HTML", "CSS", "JS"],
+    stak: ["ReactTS", "SCSS", "ExpressJS"],
     desc: "Full-stack проект для текстильной компании в Узбекистане.",
     url: "https://osiyohometex.uz",
     img: "./images/projects/osiyohome.png",
